@@ -1,0 +1,872 @@
+h1 {
+    font-family: "Merriweather" sans-serif;
+    font-size: 3em;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-family: "Quicksand", sans-serif;
+}
+
+header img {
+    height: 145px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+
+    z-index: -1;
+
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+button:hover {
+
+    border: 1px solid #39bda7;
+
+}
+
+button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+
+}
+
+button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+
+}
+
+
+
+
+body {
+    transition: color 5s ease-in-out;
+    overflow-x: hidden;
+}
+
+/* ---parte JF--- */
+
+/* ---alinhamento das caixas--- */
+
+#quemsomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(106, 82, 182, 1) 100%);
+
+}
+
+/* ---alinhamento e formatação do h2--- */
+
+#quemsomos h2 {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4e3a2;
+    font-size: 3em;
+    height: 25%;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+/* ---alinhamento e formatação do P--- */
+
+#quemsomos p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 75%;
+    color: #f4e3a2;
+    font-size: 1.6em;
+    font-family: "Poppins", sans-serif;
+
+
+
+}
+
+/* ---caixa--- */
+
+.bula1 {
+    height: 60%;
+    width: 25%;
+    margin: 5vw;
+    background-color: #6a52b6;
+    border-radius: 9px;
+    box-shadow: -11px -11px 22px #392c62, 11px 11px 22px #9b78ff;
+}
+
+/* ---caixa--- */
+
+.bula2 {
+    height: 60%;
+    width: 25%;
+    margin: 5vw;
+    background-color: #6a52b6;
+    border-radius: 9px;
+    box-shadow: -11px -11px 22px #392c62, 11px 11px 22px #9b78ff;
+
+}
+
+
+/* ---caixa--- */
+
+.bula3 {
+    height: 60%;
+    width: 25%;
+    margin: 5vw;
+    background-color: #6a52b6;
+    border-radius: 9px;
+    box-shadow: -11px -11px 22px #392c62, 11px 11px 22px #9b78ff;
+}
+
+/* ---cor e fonte do footer--- */
+footer {
+
+    background-color: #6a52b6;
+    font-family: "Poppins", sans-serif;
+}
+
+
+footer img {
+    height: 100px;
+}
+
+/* ------------------------Responsividade------------------------ */
+
+
+
+@media(max-width: 820px) {
+
+
+
+
+    #quemsomos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #quemsomos h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
+
+    #quemsomos p {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    #quemsomos .bula1 {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    #quemsomos .bula2 {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    #quemsomos .bula3 {
+        height: 50vh;
+        width: 100vw;
+    }
+
+
+}
+
+@media(max-width: 1366px) {
+    #quemsomos h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    #quemsomos p {
+
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* ------------------------Dark Mode------------------------ */
+
+.dark-mode * {
+    transition: ease-in-out 0.9s;
+}
+
+.dark-mode body {}
+
+.dark-mode #associados {}
+
+.dark-mode #quemsomos {}
+
+.dark-mode h1 {
+    color: #1eddb7;
+
+}
+
+.dark-mode #quemsomos h2 {
+    color: #1eddb7;
+
+}
+
+.dark-mode #quemsomos p {
+    color: #1eddb7;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.dark-mode .bula1 {
+    background-color: transparent;
+    box-shadow: none;
+
+}
+
+.dark-mode .bula2 {
+    background-color: transparent;
+    box-shadow: none;
+
+}
+
+.dark-mode .bula3 {
+    background-color: transparent;
+    box-shadow: none;
+
+}
+
+
+
+.dark-mode #quemsomos {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(106, 82, 182, 1) 100%);
+
+}
+
+/* ---Fim Parte JF--- */
+
+
+
+
+
+/* parte vinicius - terceira sessão */
+
+#associados {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(106, 82, 182, 1) 100%);
+    text-align: center;
+    line-break: auto;
+    height: 100vh;
+    align-items: center;
+}
+
+#associados img {
+    border-radius: 10px;
+}
+
+#associados h2 {
+    font-family: "Quicksand";
+}
+
+#associados h3 {
+    font-family: "Poppins";
+}
+
+.containerprincipal {
+    margin-left: -70px;
+    display: flex;
+    text-align: center;
+}
+
+.associadoss {
+    color: #f2e3a2;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.associadosh {
+    margin-top: 30px;
+    margin-left: 110px;
+    width: 55%;
+    text-align: center;
+}
+
+.associadosbutton {
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 35%;
+    border: none;
+    background-color: #6a52b6;
+    color: #ffffff;
+    margin-bottom: 50px;
+    transition: 0.9s ease-in-out ;
+    
+}
+.associadosbutton:hover{
+cursor: pointer;
+border: #392c62 2px solid;
+transform: rotateY(-50) 0.6s;
+}   
+
+.associadosbutton1:hover{
+    cursor: pointer;
+    border: #392c62 2px solid;
+    transform: rotateY(-50) 0.6s; 
+
+}
+
+.associadosbutton1{
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 28%;
+    border: none;
+    background-color: #6a52b6;
+    color: #ffffff;
+    margin-bottom: 50px;
+    transition: 0.9s ease-in-out ;
+}
+.squareprincipal img {
+    height: 300px;
+    width: 300px;
+}
+
+/* associados link para outros html */
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* formulario */
+
+.transparencia {
+    background-color: #000000b9;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+#facaparte {
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.formtext {
+    margin-top: 130px;
+    width: 50%;
+    height: 70%;
+    margin-left: 40px;
+}
+
+.formtext h2 {
+    font-family: quicksand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4e3a2;
+    font-size: 3em;
+    height: 30%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formtext h5 {
+    font-family: quicksand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4e3a2;
+    font-size: 2.5em;
+    height: 25%;
+    text-align: center;
+}
+
+.formtext p {
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    height: 35%;
+    color: #f4e3a2;
+    margin-top: 60px;
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.associadoss {
+    margin-bottom: 150px;
+}
+
+form {
+    border-radius: 5px solid red;
+    height: 500px;
+    width: 400px;
+    background-color: #6a52b6;
+    border-radius: 10px;
+    padding: 10px 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 190px;
+}
+
+form label {
+    font-family: poppins;
+    color: #f2e3a2;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #fbfbfb;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 18px
+}
+
+form textarea {
+    margin-bottom: 80px;
+}
+
+form textarea {
+    resize: vertical;
+    max-height: 200px;
+}
+
+form input:placeholder {
+    color: #a57d18;
+}
+
+
+/* footer */
+
+.pform {
+    color: #ffffff;
+    font-family: Poppins;
+    width: 100%;
+    font-weight: 10px;
+}
+
+
+
+
+/* dark mode */
+
+.dark-mode #associados {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(106, 82, 182, 1) 100%);
+
+}
+
+.dark-mode button {
+    background-color: #1eddb7;
+}
+
+.dark-mode h2 {
+    color: #1eddb7;
+}
+
+.dark-mode h3 {
+    color: #1eddb7;
+}
+
+.dark-mode h5 {
+    color: #00ffd5;
+}
+
+.dark-mode p {
+    color: #fbfbfb;
+}
+
+.dark-mode footer {
+    background-color: #000000;
+}
+
+.dark-mode .container h3 {
+    color: #00ffd5;
+}
+
+.dark-mode nav ul li a {
+    color: #1eddb7;
+}
+
+.dark-mode footer a {
+    color: #1eddb7;
+}
+
+.dark-mode p {
+    color: #1eddb7;
+}
+
+.dark-mode img {
+    color: #1eddb7;
+}
+
+
+.dark-mode {
+    color: #1eddb7;
+}
+
+.dark-mode form {
+    background-color: #000000;
+}
+
+.dark-mode label {
+    color: #00ffd5;
+}
+
+.dark-mode header {
+    background-color: #000000;
+}
+
+.dark-mode header nav {
+    background-color: #000000;
+}
+
+/* responsivo */
+
+@media (max-width: 768px) {
+
+
+
+
+    input {
+        width: 100%;
+    }
+
+
+    header {
+        width: 100vw;
+    }
+
+    header img {
+        margin-left: -50px;
+        height: 100px;
+
+    }
+
+    header nav {
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    header nav ul {
+        display: inline-block;
+    }
+
+    header nav ul li {
+        margin-bottom: 8px;
+    }
+
+
+    .transparencia {
+        display: inline-block;
+    }
+
+    #facaparte {
+        height: 100%;
+        display: inline-block;
+    }
+
+    .containerprincipal {
+        width: 100%;
+        margin-left: 2px;
+        display: inline-block;
+    }
+
+    #associados {
+        height: 100%;
+    }
+
+    .associadosh {
+        margin-left: 85px;
+    }
+
+    .formtext {
+        margin: 25% 25%;
+        font-size: 1em;
+        height: 50%;
+    }
+
+    .formtext h5 {
+        margin: 25% 25%;
+    }
+
+    .formtext p {
+        margin: 10% -10%;
+    }
+
+    form {
+        width: 90%;
+        height: 70%;
+        margin: 25% 5%;
+    }
+
+    .conteudo h1 {
+        font-size: 1em;
+    }
+
+    .conteudo h2 {
+        font-size: 0.5em;
+    }
+}
+
+/* fim vinicius */
+
+
+
+
+/* /////////////////// */
+/* Enzon */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    background-color: #6a52b6;
+    height: 20%;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #6a52b6;
+    color: #f2e3a2;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2e3a2;
+    align-items: center;
+    font-family: "poppins", serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2e3a2;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #f3da69;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #f3da69;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
+}
+
+nav img {
+    height: 150px;
+    justify-content: space-around;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: #f2e3a2;
+    font-size: 1.9em;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url("./index-claro.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.trans {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(106, 82, 182, 0.5);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+
+
+
+/* /////////////////////// */
+#inicio {
+    background-color: #6952b66b;
+    height: 100vh;
+    width: 100vh;
+    width: 100vh;
+}

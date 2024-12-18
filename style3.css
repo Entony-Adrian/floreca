@@ -1,0 +1,914 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "poppins", sans-serif;
+}
+
+h2 {
+    font-family: "quicksand", sans-serif;
+}
+
+h1 {
+    font-family: "Merriweather", sans-serif;
+}
+
+
+
+
+
+/* Cabeçalho  e barra de navegação */
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-family: "Poppins", sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    height: 20%;
+    z-index: 1000;
+}
+
+
+nav img {
+    height: 120px;
+    margin-left: 1em;
+}
+
+
+nav {
+    background-color: #6a52b6;
+    color: #6a52b6;
+    top: 0;
+    width: 100%;
+    padding: 0px 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 10vw;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4e3a2;
+}
+
+nav p {
+    display: flex;
+    font-size: 20px;
+    color: #6a52b6;
+    margin: 0 20px;
+    margin-left: 3em;
+}
+
+nav p a {
+    text-decoration: none;
+    color: #6a52b6;
+}
+
+nav h1 {
+    margin-right: 400px;
+    font-weight: bolder;
+}
+
+input {
+    margin-left: 230px;
+
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    /* background: #f3da69; */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #f3da69;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
+}
+
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+
+/* Fim do Cabeçalho e Barra de navegação */
+
+
+/* inicio do CSS da Biografia */
+
+#biografia {
+    display: flex;
+    width: 100%;
+
+    
+}
+
+/* #biografia img {
+    margin-top: 43px;
+    width: 50vw;
+    height: 40vw;
+    margin-top: 155px;
+    border-radius: 10px;
+
+} */
+
+.blocor {
+    display: flex;
+}
+
+.texto {
+
+    margin-top: 153px;
+    width: 100%;
+    height: 80%;
+    font-size: 20px;
+
+
+
+}
+
+
+.texto p,
+h1,
+h2 {
+
+    color: #f4e3a2;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    ;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+
+}
+
+
+.texto h2 {
+    color: #f4e3a2;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+/* 
+.imagem {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+} */
+
+
+
+
+#empresa {
+    height: 100%;
+    width: 100%;
+    /* background-color: #6a52b6; */
+}
+
+.empresacaixa {
+    flex-direction: row;
+    display: flex;
+}
+
+.imagem2 {
+
+    /* margin-top: 20px; */
+    border: #00ffd5 solid 1px;
+    height: 80%;
+    width: 50%;
+
+}
+
+
+
+.doces2 {
+    width: 48%;
+    height: 200%;
+    font-size: 1em;
+    padding-top: 50px;
+    /* border: #ce0000 2px solid; */
+}
+
+.doces2 h3 {
+    margin-top: 50px;
+    /* Ajudou arrumar a sessão dois */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #f4e3a2;
+    font-size: 3em;
+    font-family: "Quicksand", sans-serif;
+}
+
+.doces2 p {
+    color: #f4e3a2;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    /* width: 66%;
+    height: 40%; */
+    text-align: center;
+
+    margin-left: 8vw;
+
+}
+
+
+body {
+    background-color: #6a52b6;
+    overflow-x: hidden;
+}
+
+
+/* Final da parte do Ricardo */
+
+
+
+/* ------------------------------------------Feedbacks Ale---------------------------------*/
+
+
+
+
+
+
+.fundo {
+    height: 100vh;
+
+}
+
+
+
+
+h4 {
+
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+    color: #f4e3a2;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* .square_container {
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: relative;
+    display: flex;
+    gap: 40px;
+    height: 50%;
+
+
+
+}
+
+.square {
+    color: #6a52b6;
+    background-color: #f4e3a2;
+    height: 50vh;
+    width: 20vw;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif
+}
+
+.square p {
+
+    width: 80%;
+    height: 50%;
+    color: #6a52b6;
+    margin-left: 30px;
+    font-size: 1.2em;
+    font-family: "Quicksand", sans-serif;
+}
+
+.square h6 {
+    margin-left: 60px;
+    margin-top: 120px;
+    width: 50%;
+    height: 7%;
+    font-size: 1.1em;
+}
+
+.container {
+    text-align: center;
+} */
+
+/* ------------------------------------------footer Entony----------------------------------------*/
+#contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.AjusteLogo {
+    margin-left: 4em;
+    height: 140px;
+    display: flex;
+}
+
+.imgs {
+    align-items: center;
+    display: flex;
+    margin-right: 3%;
+}
+
+i {
+    color: white;
+}
+
+.imgs i {
+    padding: 20px;
+    height: 120px;
+    width: 30%;
+    font-size: 3em;
+}
+
+figcaption {
+    font-size: 15px;
+    margin-top: -3em;
+    padding: 0px 18px;
+    margin-left: -2px;
+    margin-left: -20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.Info {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(106, 82, 182, 1) 100%);
+
+}
+
+/* ---alinhamento e formatação do h2--- */
+
+#feedback h2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: #6a52b6;
+    font-size: 1.8rem;
+    height: 25%;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+
+
+}
+
+/* ---alinhamento e formatação do P--- */
+
+#feedback p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75%;
+    color: #6a52b6;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+   
+
+
+
+}
+
+/* ---caixa--- */
+
+.bula1 {
+    height: 65%;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+
+}
+
+/* ---caixa--- */
+
+.bula2 {
+    height: 65%;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+
+
+}
+
+
+/* ---caixa--- */
+
+.bula3 {
+    height: 65%;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+}
+
+.bula4 {
+    height: 65%;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+}
+
+
+
+#feedback {
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url("./ftpag3-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+#feedback .titulo {
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
+    color: #f4e3a2;
+
+}
+
+#feedback .titulo {
+    position: absolute;
+    margin-bottom: 7vh;
+    font-size: 3rem;
+
+}
+
+#empresa {
+    height: 100vh;
+    width: 100vw;
+}
+
+.ketlynn{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.ketlynn .titulo h2 {
+    height: 10%;
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #f4e3a2;
+}
+
+.ketlynn .titulo p {
+    height: 90%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.3rem;
+}
+
+.ketlynn img {
+    height: 100%;
+    width: 300%;
+}
+
+#biografia {
+    height: 100vh;
+    width: 100vw;
+}
+
+.cassol{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.cassol .titulo2 h2 {
+    height: 20%;
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #f4e3a2;
+}
+
+.cassol .titulo2 p {
+    height: 80%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    text-align: justify;
+    padding-right: 5vw;
+   
+    font-size: 1.5rem;
+}
+
+.cassol img {
+    height: 100%;
+    width: 300%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.dark-mode {
+  
+    transition: ease-in-out 0.9s;
+    color: #1eddb7;
+}
+
+.dark-mode body {
+  
+}
+
+
+.dark-mode #biografia {
+    background-color: #000000;
+}
+
+.dark-mode header {
+    background-color: #000000;
+}
+
+.dark-mode button {
+    background-color: #1eddb7;
+}
+
+.dark-mode .square {
+    background-color: #000000;
+    color: #1eddb7;
+}
+
+.dark-mode h4 {
+    color: #1eddb7;
+}
+
+
+.dark-mode #sofia {
+    background-color: transparent;
+}
+
+.dark-mode #empresa {
+    background-color: black;
+}
+
+.dark-mode p {
+    color: #1eddb7;
+}
+
+.dark-mode h2 {
+    color: #1eddb7;
+}
+
+.dark-mode h3 {
+    color: #1eddb7;
+}
+
+.dark-mode #contatos {
+    background-color: #000000;
+}
+
+.dark-mode .container {
+    color: #00ffd5;
+}
+
+.dark-mode nav {
+    background-color: #000000;
+}
+
+.dark-mode nav ul li a {
+    color: #00ffd5;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #f3da69;
+}
+
+.dark-mode i {
+    color: #00ffd5;
+}
+.dark-mode #feedback h2 {
+    color: #1eddb7;
+
+}
+
+.dark-mode #feedback p {
+    color: #1eddb7;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.dark-mode .titulo h2 {
+    color: #1eddb7;
+}
+
+.dark-mode .titulo p {
+    color: #1eddb7;
+}
+
+.dark-mode .bula1 {
+    background-color: black;
+    box-shadow: none;
+
+}
+.dark-mode .bula2 {
+    background-color: black;
+    box-shadow: none;
+
+}
+.dark-mode .bula3 {
+    background-color: black;
+    box-shadow: none;
+
+}
+.dark-mode .bula4 {
+    background-color: black;
+    box-shadow: none;
+
+}
+
+.dark-mode .cassol .titulo2 h2{
+    color: #1eddb7;
+}
+.dark-mode .cassol .titulo2 p{
+    color: #1eddb7;
+}
+
+
+
+/* ------------------RESPONSIVIDADE------------------- */
+
+
+
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+    }
+
+    header {
+        width: 110%;
+        position: fixed;
+        margin-left: -10px;
+    }
+
+    header img {
+        margin-left: -80px;
+        height: 100px;
+    }
+
+    header nav {
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    header nav ul {
+        display: inline-block;
+
+    }
+
+    header nav ul li {
+        margin-bottom: 8px;
+        margin-left: 10px;
+    }
+
+    input {
+        margin-left: 20px;
+    }
+
+    .blocor {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    #empresa {
+        height: 100%;
+    }
+    #biografia{
+        height: 100%;
+    }
+
+    .cassol .titulo2 h2{
+        height: 10%;
+    }
+    .cassol .titulo2 p{
+        height: 90%;
+    }
+
+    .cassol img{
+        height: 50%;
+        width: 100%;
+    }
+
+    .cassol{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .ketlynn{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .ketlynn img{
+        width: 100%
+    }
+
+
+    .empresacaixa {
+        flex-direction: column;
+    }
+
+    #feedback {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 5vh;
+
+    }
+
+    #feedback h2 {
+        height: 50%;
+        width: 100%;
+    }
+
+    #feedback p {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+
+    }
+
+    #feedback .bula1 {
+        margin-top: 30vh;
+        height: 20%;
+        width: 100vw;
+    }
+
+    #feedback .bula2 {
+        height: 20%;
+        width: 100vw;
+    }
+
+    #feedback .bula3 {
+        height: 20%;
+        width: 100vw;
+    }
+
+    #feedback .bula4 {
+        height: 20%;
+        width: 100vw;
+    }
+
+    #feedback .titulo{
+        margin-bottom: 40vh;
+    }
+
+    footer {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    footer figcaption{
+        width: 150%;
+    }
+}
+
+.AjusteLogo{
+        margin: 0%;
+    }
+
+    .AjusteLogo img{
+        height: 100px;
+    }
+
+    .imgs{
+        display: inline-block;
+    }

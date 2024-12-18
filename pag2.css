@@ -1,0 +1,809 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+p {
+    font-family: "poppins", sans-serif;
+}
+
+h2 {
+    font-family: "quicksand", sans-serif;
+}
+
+h1 {
+    font-family: "Merriweather", sans-serif;
+}
+
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-family: "Poppins", sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    height: 20%;
+    z-index: 1000;
+}
+
+
+nav img {
+    height: 120px;
+    margin-left: 1em;
+}
+
+
+nav {
+    background-color: #6a52b6;
+    color: #6a52b6;
+    top: 0;
+    width: 100%;
+    padding: 0px 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 10vw;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4e3a2;
+}
+
+nav p {
+    display: flex;
+    font-size: 20px;
+    color: #6a52b6;
+    margin: 0 20px;
+    margin-left: 3em;
+}
+
+nav p a {
+    text-decoration: none;
+    color: #6a52b6;
+}
+
+nav h1 {
+    margin-right: 400px;
+    font-weight: bolder;
+}
+
+input {
+    margin-left: 230px;
+
+}
+
+nav ul li a :hover {
+    color: #f3da69;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    /* background: #f3da69; */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #f3da69;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
+}
+
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+
+
+
+
+
+
+
+/* Fim do Cabeçalho */
+
+
+
+#biografia {
+    margin-top: 55px;
+    display: flex;
+    width: 100%;
+    height: 120vh;
+}
+
+.bloco {
+    display: flex;
+}
+
+.texto {
+    margin-top: 150px;
+    width: 100%;
+    height: 79vh;
+    font-size: 20px;
+
+}
+
+.texto p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.texto h2 {
+    color: #f4e3a2;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+.imagem {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+
+.imagem img {
+    width: 50vw;
+    height: 100vh;
+
+}
+
+
+#empresa {
+    background-color: #6a52b6;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.bloco2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.imagem2 {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem2 img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.texto2 {
+    width: 50vw;
+    font-size: 20px;
+}
+
+.texto2 h3 {
+    margin-top: 20%;
+    /* Ajudou a arrumar a sessão dois */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #f4e3a2;
+    font-size: 3rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.texto2 p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+body {
+    background-color: #6a52b6;
+    overflow-x: hidden;
+}
+
+
+/* Final da parte do Enzon */
+
+
+
+/* ------------------------------------------Feedbacks TonY---------------------------------*/
+
+#feedback {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url("projetosocial.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+/* ---alinhamento e formatação do h2--- */
+
+#feedback h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6a52b6;
+    font-size: 2rem;
+    height: 25%;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+/* ---alinhamento e formatação do P--- */
+
+#feedback p {
+    align-items: center;
+    text-align: center;
+    height: 75%;
+    color: #6a52b6;
+    font-size: 1.6em;
+    font-family: "Poppins", sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+    color: #f4e3a2;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* ---caixa--- */
+.bula {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.bula1 {
+    height: 50vh;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+
+}
+
+/* ---caixa--- */
+
+.bula2 {
+    height: 50vh;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+
+
+}
+
+
+/* ---caixa--- */
+
+.bula3 {
+    height: 50vh;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+
+}
+
+.bula4 {
+    height: 50vh;
+    width: 60%;
+    margin: 2vw;
+    background-color: #f4e3a2;
+    border-radius: 9px;
+
+}
+
+
+
+
+/* ------------------------------------------footer Entony----------------------------------------*/
+#contatos .imgs {
+    background-color: #6a52b6;
+    display: flex;
+    justify-content: right;
+}
+
+#contatos{
+    display: flex;
+}
+
+.AjusteLogo{
+   width: 100%;
+   height: 100%;
+   
+}
+.AjusteLogo img{
+    height: 100px;
+}
+
+
+
+
+i {
+    color: white;
+}
+
+.imgs i {
+    padding: 20px;
+    height: 120px;
+    width: 30%;
+    font-size: 3em;
+}
+
+figcaption {
+    font-size: 15px;
+    margin-top: -3em;
+    padding: 0px 18px;
+    margin-left: -2px;
+    margin-left: -20px;
+    color: #f4e3a2;
+    font-family: "Poppins", sans-serif;
+}
+
+.Info {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* footer */
+
+/* __________________________DarkMode________________________________________ */
+
+
+
+.dark-mode  {
+    background-color: black;
+    color: #00ffd5;
+}
+.dark-mode * {
+    transition: ease-in-out 0.9s;
+
+}
+
+.dark-mode button {
+    background-color: #1eddb7;
+
+}
+
+.dark-mode .square {
+    background-color: #000000;
+    color: #1eddb7;
+
+}
+
+.dark-mode h4 {
+    color: #1eddb7;
+
+}
+
+
+.dark-mode #biografia {
+    background-color: #000000;
+
+}
+
+
+/* .dark-mode #empresa {
+    background-color: black;
+   
+} */
+.dark-mode section#empresa {
+    background-color: #000000;
+}
+
+.dark-mode p {
+    color: #1eddb7;
+
+}
+
+.dark-mode h2 {
+    color: #1eddb7;
+
+}
+
+.dark-mode h3 {
+    color: #1eddb7;
+
+}
+
+.dark-mode #contatos {
+    background-color: #000000;
+
+}
+
+.dark-mode .Info{
+    background-color: #000000;
+}
+
+.dark-mode footer{
+    background-color: #000000;
+}
+
+.dark-mode .imgs{
+    background-color: black;
+}
+
+.dark-mode .container {
+    color: #00ffd5;
+
+}
+
+.dark-mode nav {
+    background-color: black;
+    color: #1eddb7;
+
+
+}
+
+.dark-mode nav ul li a {
+    color: #1eddb7;
+
+}
+
+.dark-mode nav ul li a:hover {
+    color: #f3da69;
+
+}
+
+.dark-mode figcaption {
+    color: #1eddb7;
+
+}
+
+.dark-mode #feedback {
+    background-color: #000000;
+}
+
+.dark-mode .bula1 {
+    background-color: #000000;
+    box-shadow: none;
+}
+
+.dark-mode .bula2 {
+    background-color: #000000;
+    box-shadow: none;
+}
+
+.dark-mode .bula3 {
+    background-color: #000000;
+    box-shadow: none;
+}
+
+.dark-mode .bula4 {
+    background-color: #000000;
+    box-shadow: none;
+}
+
+.dark-mode #feedback p {
+    color: #1eddb7;
+}
+
+.dark-mode #feedback h2 {
+    color: #1eddb7;
+}
+
+.dark-mode footer i{
+    border: #c80606 solid 1px;
+    background-color: #00ffd5;
+}
+
+
+/* ___________________________Responsividade_______________________________ */
+
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+    }
+
+    header {
+        /* display: none; */
+        width: 110%;
+        position: fixed;
+        margin-left: -10px;
+    }
+
+    header img {
+        margin-left: -60px;
+        height: 100px;
+    }
+
+    header nav {
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    header nav ul {
+        display: inline-block;
+
+    }
+
+    header nav ul li {
+        margin-bottom: 8px;
+        margin-left: 10px;
+    }
+
+    input {
+        margin-left: 20px;
+    }
+
+    .bloco {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .texto {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .texto h2 {
+        font-size: 30px;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .imagem {
+        height: 100vh;
+    }
+
+    .imagem img {
+        margin-top: -50%;
+        height: 35vh;
+        width: 100%;
+    }
+
+    /* ------------------------ Segunda seção_--------------------------- */
+    #empresa {
+        width: 100%;
+    }
+
+    .bloco2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .texto{
+        margin-bottom: 0px;
+    }
+    
+    .texto2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .texto2 h2 {
+        font-size: 30px;
+    }
+
+    .texto2 p {
+        font-size: 15px;
+    }
+
+    .imagem2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .imagem2 img {
+        width: 100%;
+    }
+
+    /* ___________________________Feedback_______________________________ */
+
+
+    #feedback {
+        background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url("./prato.jpeg");
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .bula {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bula1 {
+        height: 80%;
+        width: 100%;
+        margin-left: -0.3%;
+    }
+
+    .bula2 {
+        height: 80%;
+        width: 100%;
+        margin-left: -0.3%;
+    }
+
+    .bula3 {
+        height: 80%;
+        width: 100%;
+        margin-left: -0.3%;
+    }
+
+    .bula4 {
+        height: 80%;
+        width: 100%;
+        margin-left: -0.3%;
+    }
+
+    /* ---alinhamento e formatação do h2--- */
+
+    #feedback h2 {
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #6a52b6;
+        font-size: 2rem;
+        height: 25%;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    /* ---alinhamento e formatação do P--- */
+
+    #feedback p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 75%;
+        color: #6a52b6;
+        font-size: 1.6em;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .transparencia {
+        height: 100vh;
+
+    }
+
+    .imgs {
+        margin-left: -10%;
+        display: flex;
+    }
+
+
+    footer {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer figcaption {
+        width: 150%;
+    }
+
+    .info{
+        border: #000000 solid 3px;
+    }
+    
+    .AjusteLogo{
+        margin: 0%;
+    }
+
+    .AjusteLogo img{
+        height: 100px;
+    }
+
+    .imgs{
+        display:flex;
+    }
+}
